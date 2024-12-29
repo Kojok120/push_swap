@@ -6,7 +6,7 @@
 /*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:06:13 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 12:39:46 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/29 13:11:22 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void    sort(t_list **a, t_list **b)
     else if (size <= 5)
         sort_five(a, b);
     else
-        quick_sort(a, b);
+        radix_sort(a, b);
 }
 
 int	main(int argc, char *argv[])

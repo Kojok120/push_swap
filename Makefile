@@ -6,7 +6,7 @@
 #    By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/29 10:26:56 by kokamoto          #+#    #+#              #
-#    Updated: 2024/12/29 12:40:14 by kokamoto         ###   ########.fr        #
+#    Updated: 2024/12/29 13:11:09 by kokamoto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,7 @@ SRCS = main.c \
 	swap.c \
 	rotate.c \
 	reverse_rotate.c \
-	quick_sort.c \
-	get_median.c
+	radix_sort.c
 
 LIBFT_SRCS = libft/ft_hexlen.c \
 	libft/ft_atoi.c \
