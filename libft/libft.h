@@ -6,7 +6,7 @@
 /*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:36:50 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 11:51:25 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/29 13:22:15 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
-long					ft_atoi(const char *str);
+long				ft_atoi(const char *str);
 size_t				ft_strlen(const char *str);
 int					ft_numlen(long long n);
 int					ft_hexlen(unsigned long long n);

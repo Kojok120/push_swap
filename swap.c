@@ -6,7 +6,7 @@
 /*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:01:48 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 12:40:38 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/29 13:21:49 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	swap(t_list **stack)
 	t_list	*second;
 
 	if (!*stack || !(*stack)->next)
-		return ;    
+		return ;
 	first = *stack;
 	second = (*stack)->next;
 	first->next = second->next;

@@ -6,7 +6,7 @@
 /*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:51:15 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 11:54:12 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/29 13:21:37 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,33 +19,33 @@ void	error_exit(t_list **a, t_list **b)
 	if (b)
 		ft_lstclear(b, free);
 	write(2, "Error\n", 6);
-    exit(1);
-	return;
+	exit(1);
+	return ;
 }
 
-int    is_valid_number(const char *str, long *num)
+int	is_valid_number(const char *str, long *num)
 {
-    int     i;
-    long    temp;
+	int		i;
+	long	temp;
 
-    i = 0;
-    if (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
-        return (0);
-    if (str[i] == '-' || str[i] == '+')
-        i++;
-    if (!str[i])
-        return (0);
-    while (str[i])
-    {
-        if (str[i] < '0' || str[i] > '9')
-            return (0);
-        i++;
-    }
-    temp = ft_atoi(str);
-    if (temp > INT_MAX || temp < INT_MIN)
-        return (0);
-    *num = temp;
-    return (1);
+	i = 0;
+	if (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
+		return (0);
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	if (!str[i])
+		return (0);
+	while (str[i])
+	{
+		if (str[i] < '0' || str[i] > '9')
+			return (0);
+		i++;
+	}
+	temp = ft_atoi(str);
+	if (temp > INT_MAX || temp < INT_MIN)
+		return (0);
+	*num = temp;
+	return (1);
 }
 
 int	has_duplicate(t_list *stack, int num)

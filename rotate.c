@@ -6,7 +6,7 @@
 /*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:49:30 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 12:01:31 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/29 13:21:46 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	rotate(t_list **stack)
 	t_list	*first;
 
 	if (!stack || !*stack || !(*stack)->next)
-		return;
+		return ;
 	first = *stack;
 	last = ft_lstlast(*stack);
 	*stack = first->next;
