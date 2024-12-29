@@ -6,7 +6,7 @@
 /*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/29 13:05:01 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 13:21:22 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/29 13:24:03 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	radix_sort(t_list **a, t_list **b)
 
 	size = ft_lstsize(*a);
 	normalize_stack(a);
-	max_bits = get_max_bits(*a);
+	max_bits = get_max(*a);
 	i = -1;
 	while (++i < max_bits)
 	{
