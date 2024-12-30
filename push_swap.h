@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kokamoto <kojokamo120@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:26:43 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 13:21:30 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/30 12:29:01 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ void	rrb(t_list **b);
 void	rrr(t_list **a, t_list **b);
 void	sort_three(t_list **a);
 void	radix_sort(t_list **a, t_list **b);
+void	chunk_sort(t_list **a, t_list **b);
 
 #endif

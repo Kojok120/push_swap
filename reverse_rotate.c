@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kokamoto <kojokamo120@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:50:32 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 13:22:35 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/30 12:11:50 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,18 @@ void	reverse_rotate(t_list **stack)
 void	rra(t_list **a)
 {
 	reverse_rotate(a);
-	ft_printf("rra\n");
+	write(1, "rra\n", 4);
 }
 
 void	rrb(t_list **b)
 {
 	reverse_rotate(b);
-	ft_printf("rrb\n");
+	write(1, "rrb\n", 4);
 }
 
 void	rrr(t_list **a, t_list **b)
 {
 	reverse_rotate(a);
 	reverse_rotate(b);
-	ft_printf("rrr\n");
+	write(1, "rrr\n", 4);
 }

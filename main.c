@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kokamoto <kojokamo120@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:06:13 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 13:21:34 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:12:10 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,26 +41,6 @@ void	sort_three(t_list **a)
 	free(arr);
 }
 
-void	sort_five(t_list **a, t_list **b)
-{
-	int	size;
-	int	i;
-
-	size = ft_lstsize(*a);
-	i = 0;
-	while (i < size - 3)
-	{
-		pb(a, b);
-		i++;
-	}
-	sort_three(a);
-	while (i > 0)
-	{
-		pa(a, b);
-		i--;
-	}
-}
-
 void	sort(t_list **a, t_list **b)
 {
 	int	size;
@@ -70,8 +50,8 @@ void	sort(t_list **a, t_list **b)
 		sa(a);
 	else if (size == 3)
 		sort_three(a);
-	else if (size <= 5)
-		sort_five(a, b);
+	else if (size <= 300)
+		chunk_sort(a, b);
 	else
 		radix_sort(a, b);
 }

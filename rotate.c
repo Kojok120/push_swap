@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rotate.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kokamoto <kojokamo120@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:49:30 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 13:21:46 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/30 12:12:12 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ void	rotate(t_list **stack)
 void	ra(t_list **a)
 {
 	rotate(a);
-	ft_printf("ra\n");
+	write(1, "ra\n", 3);
 }
 
 void	rb(t_list **b)
 {
 	rotate(b);
-	ft_printf("rb\n");
+	write(1, "rb\n", 3);
 }

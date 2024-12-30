@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kokamoto <kokamoto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kokamoto <kojokamo120@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/26 11:01:48 by kokamoto          #+#    #+#             */
-/*   Updated: 2024/12/29 13:21:49 by kokamoto         ###   ########.fr       */
+/*   Updated: 2024/12/30 12:12:36 by kokamoto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,18 +29,18 @@ void	swap(t_list **stack)
 void	sa(t_list **a)
 {
 	swap(a);
-	ft_printf("sa\n");
+	write(1, "sa\n", 3);
 }
 
 void	sb(t_list **b)
 {
 	swap(b);
-	ft_printf("sb\n");
+	write(1, "sb\n", 3);
 }
 
 void	ss(t_list **a, t_list **b)
 {
 	swap(a);
 	swap(b);
-	ft_printf("ss\n");
+	write(1, "ss\n", 3);
 }
